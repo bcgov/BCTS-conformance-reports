@@ -3,11 +3,11 @@
 ## Overview
 
 Welcome to the BCTS-conformance-reports repository. This page serves as a tool to automate the filtering and generation of the following bi-weekly conformance reports: 
-    - Annual Development Ready (DR) Conformance Summary
-    - Annual Developed Volume (ADV) Confromance Summary
-    - Development In Progress (DIP) Timber Inventory Conformance Summary
-    - Ready to Develop (RTD) Timber Inventory Conformance Summary
-    - Ready to Sell (RTS) Timber Inventory Conformance Summary
+- Annual Development Ready (DR) Conformance Summary
+- Annual Developed Volume (ADV) Confromance Summary
+- Development In Progress (DIP) Timber Inventory Conformance Summary
+- Ready to Develop (RTD) Timber Inventory Conformance Summary
+- Ready to Sell (RTS) Timber Inventory Conformance Summary
 
 This repository leverages GitHub Actions CI (Continuous Integration) to automatically execute the scripts in a virtual environment, where Python and all necessary dependencies are pre-installed. This setup eliminates the need for users to install anything on their local machines. To generate the desired reports, simply upload the base report to the data folder. The actions will run automatically, and the generated reports will be available in the artifacts section.
 
