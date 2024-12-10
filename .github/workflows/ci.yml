@@ -19,31 +19,48 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v4  
         with:
-          python-version: '3.10'  # Using Python 3.10 for better compatibility
+          python-version: '3.12' 
 
       - name: Install distutils and build-essential
         run: |
           sudo apt-get update
           sudo apt-get install -y python3-distutils build-essential
 
+
+      - name: Cache pip dependencies
+        uses: actions/cache@v3
+        with:
+          path: |
+            ~/.cache/pip  # Cache pip's cache directory
+            venv/         # Cache virtual environment directory
+          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}  # Cache key based on requirements.txt
+          restore-keys: |
+            ${{ runner.os }}-pip-
+
+
       - name: Set up virtual environment
         run: |
           python -m venv venv  # Create a virtual environment
           source venv/bin/activate  # Activate the virtual environment
 
+
       - name: Install dependencies
         run: |
+          source venv/bin/activate  # Ensure virtual environment is activated
           python -m pip install --upgrade pip
           python -m pip install setuptools==75.0.0 wheel==0.40.0  # Ensuring specific versions
-          python -m pip install -v --no-cache-dir --prefer-binary -r requirements.txt  # Install dependencies with verbose output
+          python -m pip install --prefer-binary -r requirements.txt  # Install dependencies
+
 
       - name: Run scripts
         run: |
+          source venv/bin/activate  # Ensure virtual environment is activated
           python ./scripts/ADV_script.py  
           python ./scripts/DR_script.py  
           python ./scripts/DIP_script.py
           python ./scripts/RTD_script.py
           python ./scripts/RTS_script.py
+
 
       - name: Upload reports as artifacts
         uses: actions/upload-artifact@v4
