@@ -61,9 +61,22 @@ jobs:
           python -m pip install setuptools==75.0.0 wheel==0.40.0  # Ensuring specific versions
           python -m pip install --prefer-binary -r requirements.txt  # Install dependencies
 
+      - name: Check if data folder is empty
+        id: check-data-folder
+        run: |
+          if [ -z "$(ls -A data)" ]; then
+            echo "is_empty=true" >> $GITHUB_ENV
+          else
+            echo "is_empty=false" >> $GITHUB_ENV
+          fi
+
+      - name: Skip scripts if data folder is empty
+        if: env.is_empty == 'true'
+        run: |
+          echo "The data folder is empty. Skipping script execution."
 
       - name: Run scripts
-        if: steps.check-data.outputs.files != ''
+        if: env.is_empty == 'false'
         run: |
           source venv/bin/activate  # Ensure virtual environment is activated
           python ./scripts/ADV_script.py  
