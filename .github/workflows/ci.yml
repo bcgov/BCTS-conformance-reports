@@ -31,11 +31,11 @@ jobs:
         uses: actions/cache@v3
         with:
           path: |
-            ~/.cache/pip  # Cache pip's cache directory
-            venv/         # Cache virtual environment directory
-          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}  # Cache key based on requirements.txt
+            ~/.cache/pip  
+            venv/         
+          key: ${{ runner.os }}-python-${{ hashFiles('requirements.txt') }}-python-${{ runner.python-version }}
           restore-keys: |
-            ${{ runner.os }}-pip-
+            ${{ runner.os }}-python-
 
 
       - name: Set up virtual environment
