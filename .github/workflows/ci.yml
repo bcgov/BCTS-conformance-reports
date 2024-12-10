@@ -25,6 +25,23 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v3  
+      
+      - name: Check for .xlsx files in the data folder
+        id: check_xlsx
+        run: |
+          if [ -z "$(find data -type f -name '*.xlsx' 2>/dev/null)" ]; then
+            echo "No .xlsx files found in the data folder."
+            echo "skip_build=true" >> $GITHUB_ENV
+          else
+            echo ".xlsx files found in the data folder."
+            echo "skip_build=false" >> $GITHUB_ENV
+          fi
+
+      - name: Stop workflow if no .xlsx files are found
+        if: env.skip_build == 'true'
+        run: |
+          echo "Skipping the workflow since no .xlsx files are present in the data folder."
+          exit 0
 
       - name: Set up Python
         uses: actions/setup-python@v4  
@@ -61,19 +78,6 @@ jobs:
           python -m pip install setuptools==75.0.0 wheel==0.40.0  # Ensuring specific versions
           python -m pip install --prefer-binary -r requirements.txt  # Install dependencies
 
-      - name: Check if data folder is empty
-        id: check-data-folder
-        run: |
-          if [ -z "$(ls -A data)" ]; then
-            echo "is_empty=true" >> $GITHUB_ENV
-          else
-            echo "is_empty=false" >> $GITHUB_ENV
-          fi
-
-      - name: Skip scripts if data folder is empty
-        if: env.is_empty == 'true'
-        run: |
-          echo "The data folder is empty. Skipping script execution."
 
       - name: Run scripts
         if: env.is_empty == 'false'
