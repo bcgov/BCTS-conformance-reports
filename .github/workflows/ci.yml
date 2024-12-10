@@ -3,10 +3,20 @@ name: Python CI/CD
 on:
   push:
     branches:
-      - main  
+      - main
+    paths:
+      - '**/scripts/**'           
+      - 'data/**'                  
+      - 'requirements.txt'         
+      - '.github/workflows/**'    
   pull_request:
     branches:
-      - main  
+      - main
+    paths:
+      - '**/scripts/**'           
+      - 'data/**'                  
+      - 'requirements.txt'         
+      - '.github/workflows/**'    
 
 jobs:
   build:
@@ -53,6 +63,7 @@ jobs:
 
 
       - name: Run scripts
+        if: steps.check-data.outputs.files != ''
         run: |
           source venv/bin/activate  # Ensure virtual environment is activated
           python ./scripts/ADV_script.py  
