@@ -39,11 +39,11 @@ jobs:
 
       - name: Run scripts
         run: |
-          python path/to/your/ADV_script.py  
-          python path/to/your/DR_script.py  
-          python path/to/your/DIP_script.py
-          python path/to/your/RTD_script.py
-          python path/to/your/RTS_script.py
+          python ./scripts/ADV_script.py  
+          python ./scripts/DR_script.py  
+          python ./scripts/DIP_script.py
+          python ./scripts/RTD_script.py
+          python ./scripts/RTS_script.py
 
       - name: Upload reports as artifacts
         uses: actions/upload-artifact@v3
