@@ -8,7 +8,7 @@ import warnings
 import os
 import sys
 warnings.filterwarnings('ignore')
-pd.set_option('future.no_silent_downcasting', True)
+
 
 # Make a list of all the regions and their respective business areas 
 area_list = {
