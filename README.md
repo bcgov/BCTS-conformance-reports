@@ -101,7 +101,7 @@ The base report (`QA_DR_DIP_RTS_HICurrentFiscal-Or-Planned_with_CFSSvrLine_YYYY_
 
 ---
 
-**2.7** Write "Added bew base report (*report_date_for_new_report*) in the commit message and click on the "Commit changes" button:
+**2.7** Upload the base report you hope to use from your local directories and write "Added bew base report (*report_date_for_new_report*)" in the commit message then click on the "Commit changes" button:
 
 
 <div style="text-align: center;">
