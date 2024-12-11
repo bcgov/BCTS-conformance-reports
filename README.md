@@ -152,6 +152,6 @@ The base report (`QA_DR_DIP_RTS_HICurrentFiscal-Or-Planned_with_CFSSvrLine_YYYY_
 
 
 <div style="text-align: center;">
-  <img src="img/how_to_find_artifacts.png" width="70%" height="70%">
+  <img src="img/how_to_find_artifacts.png" width="90%" height="90%">
 </div>
 
