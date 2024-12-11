@@ -87,7 +87,7 @@ The base report (`QA_DR_DIP_RTS_HICurrentFiscal-Or-Planned_with_CFSSvrLine_YYYY_
 
 
 <div style="text-align: center;">
-  <img src="img/commit_message_deletion.png" width="55%" height="55%">
+  <img src="img/commit_message_deletion.png" width="45%" height="45%">
 </div>
 
 ---
