@@ -50,7 +50,7 @@ The base report (`QA_DR_DIP_RTS_HICurrentFiscal-Or-Planned_with_CFSSvrLine_YYYY_
 
 
 </center>
-  <img src="img/data_folder.png" width="70%" height="70% style="display: block; margin: 0 auto;">
+  <img src="img/data_folder.png" width="80%" height="80% style="display: block; margin: 0 auto;">
 <center>
 
 ---
