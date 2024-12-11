@@ -21,7 +21,7 @@ This repository has the following structure:
 project-folder/
 ├── data/
 │   ├── .gitkeep
-│   └── input_data.xlsx                        
+│   └── QA_DR_DIP_RTS_HICurrentFiscal-Or-Planned_with_CFSSvrLine_YYYY_MM_DD.xlsxxlsx                        
 ├── scripts/                
 │   ├── ADV_script.py
 │   ├── DIP_script.py
@@ -31,9 +31,24 @@ project-folder/
 ├── requirements.txt 
 ```
 
-The base report (input data) should be placed in the `data` directory, while the five scripts in the `scripts` folder are responsible for generating the corresponding reports. Each script reads the base report from the `data` folder and processes it to produce its respective output.
+The base report (`QA_DR_DIP_RTS_HICurrentFiscal-Or-Planned_with_CFSSvrLine_YYYY_MM_DD.`) should be placed in the `data` directory, while the five scripts in the `scripts` folder are responsible for generating the corresponding reports. Each script reads the base report from the `data` folder and processes it to produce its respective output.
 
 ## Usage 
 
 **Important**: Please ONLY modify the base report within the data folder when necessary. DO NOT make changes to or delete any other files in any directories. Altering the scripts or the `requirements.txt` file could disrupt the automation process and result in errors.
 
+### 1. Have your base report ready 
+- Prepare the base report you want to use on your local machine. Ensure that the report follows the exact naming format: `QA_DR_DIP_RTS_HICurrentFiscal-Or-Planned_with_CFSSvrLine_YYYY_MM_DD.` where `YYYY_MM_DD` should be replaced with the report date. 
+
+### 2. Replace with the old base report with the new one you hope to use
+- Enter the `data` directory: 
+![](img/data_folder.png)
+
+- Click on the old base report file that's currently in the directory:
+![](img/old_base_report.png)
+
+- Click on the three dots on the top right and select "Delete file"
+![](img/three_dots.png)
+
+- Click on the "Commit changes" on the top right
+![](img/commit_deletion.png)
