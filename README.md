@@ -45,52 +45,75 @@ The base report (`QA_DR_DIP_RTS_HICurrentFiscal-Or-Planned_with_CFSSvrLine_YYYY_
 ### 2. Replace with the old base report with the new one you hope to use
 - 2.1 Enter the `data` directory: 
 
-<img src="img/data_folder.png" width="50%" height="50%">
-
-![](img/data_folder.png)
+<div style="text-align: center;">
+  <img src="img/data_folder.png" width="70%" height="70%">
+</div>
 
 - 2.2 Click on the old base report file that's currently in the directory:
 
-![](img/old_base_report.png)
+<div style="text-align: center;">
+  <img src="img/old_base_report.png" width="70%" height="70%">
+</div>
 
 - 2.3 Click on the three dots in the top right corner and select "Delete file." **Note**: NEVER delete the `.gitkeep` file, as doing so will remove the entire `data` folder!
 
-![](img/three_dots.png)
+<div style="text-align: center;">
+  <img src="img/three_dots.png" width="70%" height="70%">
+</div>
 
 - 2.4 Click on the "Commit changes" button in the top right corner:
 
-![](img/commit_deletion.png)
+<div style="text-align: center;">
+  <img src="img/commit_deletion.png" width="70%" height="70%">
+</div>
 
 - 2.5 Use the automatically generated commit message, and write: Delete old base report for *report_date_for_old_report*, then click on "Commit changes":
 
-![](img/commit_message_deletion.png)
+<div style="text-align: center;">
+  <img src="img/commit_message_deletion.png" width="70%" height="70%">
+</div>
 
 - 2.6 Now click on the "Add file" button in the top right corner and select "Upload files":
 
-![](img/upload_new_file.png)
+<div style="text-align: center;">
+  <img src="img/upload_new_file.png" width="70%" height="70%">
+</div>
 
 - 2.7 Write "Added bew base report (*report_date_for_new_report*) in the commit message and click on the "Commit changes" button:
 
-![](img/commit_message_upload.png)
+<div style="text-align: center;">
+  <img src="img/commit_message_upload.png" width="70%" height="70%">
+</div>
 
 ### 3. Check action status 
 
 - 3.1 At this point, uploading the new base report should have triggered the workflow. Return to the main repository page and check the message next to your username. If you see a brown dot, it means the action has started running, and you can click on it to monitor its progress. If the dot isn't visible, refresh the page, and it should appear:
 
-![](img/action_running.png)
+<div style="text-align: center;">
+  <img src="img/action_running.png" width="70%" height="70%">
+</div>
 
 - 3.2 Once you click on the brown dot, you will be able to see the progress showing which stage of the workflow it's currently at:
 
-![](img/action_progress.png)
+<div style="text-align: center;">
+  <img src="img/action_progress.png" width="70%" height="70%">
+</div>
 
 - 3.3 If the workflow is completed, you will see a green circle with a check mark next to the "build" tab under "Jobs", as well as at the top left, beside the commit message. Once you see this, click on "Summary":
 
-![](img/action_complete.png)
+<div style="text-align: center;">
+  <img src="img/action_complete.png" width="70%" height="70%">
+</div>
 
 - 3.4 Scroll down to the "Artifacts" section near the bottom. If the workflow ran successfully, you should see a new entry called "reports." You can download it by either clicking directly on the name or by selecting the download button. The file will be a ZIP archive containing all five conformance summaries.
 
-![](img/save_reports.png)
+<div style="text-align: center;">
+  <img src="img/save_reports.png" width="70%" height="70%">
+</div>
 
 - 3.5 If you accidentally exit this page before navigating to the "Artifacts", simply return to the repo's main page, select the "Actions" tab at the top, click on the most recent action and you will be able to find "Artifacts" section at the bottom of the page:
 
-![](img/how_to_find_artifacts.png)
+<div style="text-align: center;">
+  <img src="img/how_to_find_artifacts.png" width="70%" height="70%">
+</div>
+
