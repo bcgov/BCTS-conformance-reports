@@ -45,7 +45,7 @@ The base report (`QA_DR_DIP_RTS_HICurrentFiscal-Or-Planned_with_CFSSvrLine_YYYY_
 ### 2. Replace with the old base report with the new one you hope to use
 - 2.1 Enter the `data` directory: 
 
-<img src="img/data_folder.png" alt="Logo" width="300">
+<img src="img/data_folder.png" width="50%" height="50%">
 
 ![](img/data_folder.png)
 
