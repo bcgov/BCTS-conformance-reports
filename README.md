@@ -125,7 +125,7 @@ The base report (`QA_DR_DIP_RTS_HICurrentFiscal-Or-Planned_with_CFSSvrLine_YYYY_
 
 
 <div style="text-align: center;">
-  <img src="img/action_progress.png" width="70%" height="70%">
+  <img src="img/action_progress.png" width="85%" height="85%">
 </div>
 
 ---
