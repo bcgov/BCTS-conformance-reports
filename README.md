@@ -83,7 +83,7 @@ The base report (`QA_DR_DIP_RTS_HICurrentFiscal-Or-Planned_with_CFSSvrLine_YYYY_
 
 ---
 
-**2.5** You can use the default commit message but also write: "Delete old base report for *report_date_for_old_report*" in the extended description, then click on "Commit changes":
+**2.5** You can use the default commit message but also add in the extended description field "Delete old base report for *report_date_for_old_report*", then click on "Commit changes":
 
 
 <div style="text-align: center;">
