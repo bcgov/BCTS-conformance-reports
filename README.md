@@ -110,7 +110,7 @@ The base report (`QA_DR_DIP_RTS_HICurrentFiscal-Or-Planned_with_CFSSvrLine_YYYY_
 
 ---
 
-### 3. Check action progress and download your reports
+### 3. Check workflow progress and download your reports
 
 ---
 
