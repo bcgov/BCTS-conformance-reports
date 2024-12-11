@@ -87,7 +87,7 @@ The base report (`QA_DR_DIP_RTS_HICurrentFiscal-Or-Planned_with_CFSSvrLine_YYYY_
 
 
 <div style="text-align: center;">
-  <img src="img/commit_message_deletion.png" width="40%" height="40%">
+  <img src="img/commit_message_deletion.png" width="55%" height="55%">
 </div>
 
 ---
@@ -117,7 +117,7 @@ The base report (`QA_DR_DIP_RTS_HICurrentFiscal-Or-Planned_with_CFSSvrLine_YYYY_
 **3.1** At this point, uploading the new base report should have triggered the workflow. Return to the main repository page and check the message next to your username. If you see a brown dot, it means the action has started running, and you can click on it to monitor its progress. If the dot isn't visible, refresh the page, and it should appear:
 
 
-<img src="img/action_running.png" width="40%" height="40%" style="display: block; margin: 0 auto;">
+<img src="img/action_running.png" width="55%" height="55%" style="display: block; margin: 0 auto;">
 
 ---
 
@@ -134,7 +134,7 @@ The base report (`QA_DR_DIP_RTS_HICurrentFiscal-Or-Planned_with_CFSSvrLine_YYYY_
 
 
 <div style="text-align: center;">
-  <img src="img/action_complete.png" width="40%" height="40%">
+  <img src="img/action_complete.png" width="55%" height="55%">
 </div>
 
 ---
